@@ -1,7 +1,7 @@
-var yourAPIKey = "AZosHhV0SEaGoklzJCJJsz";
+const APIkey = "AZosHhV0SEaGoklzJCJJsz";
 
 // Set up the picker
-const client = filestack.init(yourAPIKey);
+const client = filestack.init(APIkey);
 const options = {
   onUploadDone: updateForm,
   maxSize: 10 * 1024 * 1024,
@@ -44,4 +44,20 @@ function updateForm(result) {
   nameBox.appendChild(name);
   urlBox.appendChild(document.createTextNode("Uploaded to: "));
   urlBox.appendChild(url);
+}
+
+
+function myFunction() {
+    /* Get the text field */
+    var copyText = document.getElementById("myInput");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
 }
