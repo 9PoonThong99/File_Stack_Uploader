@@ -41,7 +41,11 @@
               <form id="pick-form">
                 <div class="field">
                   <div class="control">
-                    <button class="button" type="button" id="picker">
+                    <button
+                      class="button btn-primary btn"
+                      type="button"
+                      id="picker"
+                    >
                       Pick file
                     </button>
                     <input type="hidden" id="fileupload" />
@@ -51,7 +55,7 @@
                 </div>
                 <div class="field">
                   <div class="control">
-                    <input class="button" type="submit" value="Submit" />
+                    <input class="button btn" type="submit" value="Submit" />
                   </div>
                 </div>
               </form>
@@ -62,10 +66,16 @@
         <div class="row">
           <div class="col-md-12">
             <!-- The text field -->
-            <input type="text" value=" " id="myInput" />
-
-            <!-- The button used to copy the text -->
-            <button onclick="myFunction()">Copy text</button>
+            <form class=" form ">
+              <input
+                type="text"
+                value=""
+                id="inputUrl"
+                class="input_url form-control"
+              />
+              <!-- The button used to copy the text -->
+              <button class="btn_copy btn">Copy Url</button>
+            </form>
           </div>
         </div>
       </div>
